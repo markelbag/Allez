@@ -26,7 +26,7 @@ function Pricing() {
       <a className="inline-block py-4 px-8 leading-none text-white bg-orange-600 hover:bg-gray-700 rounded shadow" href="#"><Link to="/account">Sign Up</Link></a>
     </div>
     <div className="w-full md:w-1/3 p-8 mb-4 md:mb-0 md:border-l border-orange-300">
-      <h3 className="text-5xl font-heading">$200 / mo</h3>
+      <h3 className="text-5xl font-heading">$200 ADDED TEXT / mo</h3>
       <p className="mt-4 mb-6 text-gray-500 leading-relaxed bg-white">Advanced Technique and Tactics  is dedicated to developing two key ingredients of competitive fencing: discipline and focus.<br/><br/>Membership includes 3 ninety-minute classes per week and open bouting on Saturdays. <br/><br/> Weapon, glove and mask required.
       <div className="flex-col  pt-8 text-left ml-8 w-full">
           <li>Refine Footwork and Bladework</li>
