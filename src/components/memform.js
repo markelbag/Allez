@@ -5,7 +5,7 @@ import "./color.css"
 
 function Memform() {
     return(
-        <section>
+        <section className="lg:w-3/4 m-auto">
         <div className="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6">
   <div className="md:grid md:grid-cols-3 md:gap-6">
     <div className="md:col-span-1">

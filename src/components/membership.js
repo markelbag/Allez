@@ -85,7 +85,7 @@ function Membership() {
                   </ul>
                   <div className="mt-8">
                     <div className="rounded-lg shadow-md">
-                      <a href="#" className="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150" aria-describedby="tier-hobby">
+                      <a href="#" className="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-gray-700 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150" aria-describedby="tier-hobby">
                        <Link to="/Membershipform">Sign Up</Link>
                       </a>
                     </div>
@@ -255,7 +255,7 @@ function Membership() {
                   </ul>
                   <div className="mt-8">
                     <div className="rounded-lg shadow-md">
-                      <a href="#" className="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150" aria-describedby="tier-scale">
+                      <a href="#" className="block w-full text-center rounded-lg border border-transparent bg-white px-6 py-3 text-base leading-6 font-medium text-gray-700 hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150" aria-describedby="tier-scale">
                         <Link to="/Membershipform">Sign Up</Link>
                       </a>
                     </div>

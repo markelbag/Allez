@@ -23,55 +23,27 @@ function Landing() {
             <a href="#" aria-label="Home">
               {/* <img className="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt="Logo"></img> */}
             </a>
-            <div className="-mr-2 flex items-center md:hidden">
+            {/* <div className="-mr-2 flex items-center md:hidden">
               <button type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" id="main-menu" aria-label="Main menu" aria-haspopup="true">
                 <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="hidden md:block md:ml-10 md:pr-4">
+        {/* <div className="hidden md:block md:ml-10 md:pr-4"> */}
           {/* <a href="#" className="font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Product</a>
           <a href="#" className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Features</a>
           <a href="#" className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Marketplace</a>
           <a href="#" className="ml-8 font-medium text-gray-500 hover:text-gray-900 transition duration-150 ease-in-out">Company</a>
           <a href="#" className="ml-8 font-medium text-indigo-600 hover:text-indigo-900 transition duration-150 ease-in-out">Log in</a> */}
-        </div>
+        {/* </div> */}
       </nav>
     </div>
 
 
-    <div className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
-      <div className="rounded-lg shadow-md">
-        <div className="rounded-lg bg-white shadow-xs overflow-hidden" role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
-          <div className="px-5 pt-4 flex items-center justify-between">
-            <div>
-              <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-on-white.svg" alt=""></img>
-            </div>
-            <div className="-mr-2">
-              <button type="button" className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Close menu">
-                <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div className="px-2 pt-2 pb-3">
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Product</a>
-            <a href="#" className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Features</a>
-            <a href="#" className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Marketplace</a>
-            <a href="#" className="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out" role="menuitem">Company</a>
-          </div>
-          <div>
-            <a href="#" className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100 hover:text-indigo-700 focus:outline-none focus:bg-gray-100 focus:text-indigo-700 transition duration-150 ease-in-out" role="menuitem">
-              Log in
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 
     <main className="mt-10 mx-auto max-w-screen-8xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
       <div className="sm:text-center lg:text-left">
@@ -97,10 +69,10 @@ function Landing() {
   </div>
 </div>
 <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-  <img className=" flex pt-32 h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-auto" src="https://firebasestorage.googleapis.com/v0/b/allez-47904.appspot.com/o/IMG_7375.jpg?alt=media&token=7c7da9be-1584-4c3c-831e-6ee5ae63d34f" alt="coaches"></img>
+  <img className=" flex lg:pt-32 h-56 w-full object-cover sm:h-72 sm:pt-0 md:h-96 lg:w-full lg:h-auto" src="https://firebasestorage.googleapis.com/v0/b/allez-47904.appspot.com/o/IMG_7375.jpg?alt=media&token=7c7da9be-1584-4c3c-831e-6ee5ae63d34f" alt="coaches"></img>
 </div>
 <div>
-<section className=" px-4 marg">
+<section className=" px-4 marg lg:w-3/4 m-auto">
   <h2 className="text-3xl text-center mb-8 font-heading">Latest posts</h2>
   <div className="flex flex-wrap -mx-4">
     <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">

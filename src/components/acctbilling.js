@@ -1,7 +1,8 @@
 import React from "react"
+import "./color.css"
 import { Link } from "gatsby";
 
-function Admn() {
+function AcctBilling() {
     return (
         <div>
         <div className="h-screen flex overflow-hidden bg-white">
@@ -39,7 +40,7 @@ function Admn() {
                   </svg>
                 </button>
               </div>
-              <div className="flex-shrink-0 flex items-center text-xl px-4">Allez Admin
+              <div className="flex-shrink-0 flex items-center text-xl px-4">Billing
                 {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-purple-on-white.svg" alt="Workflow"></img> */}
               </div>
               <div className="mt-5 flex-1 h-0 overflow-y-auto">
@@ -105,7 +106,7 @@ function Admn() {
         <div className="hidden lg:flex lg:flex-shrink-0">
           <div className="flex flex-col w-64 border-r border-gray-200 pt-5 pb-4 bg-gray-100">
             <div className="flex items-center flex-shrink-0 px-6 font-semibold text-4xl text">
-              {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-purple-on-white.svg" alt="Workflow"></img> */}Allez Admin
+              {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-purple-on-white.svg" alt="Workflow"></img> */}Billing
             </div>
             {/* <!-- Sidebar component, swap this element with another sidebar if you like --> */}
             <div className="h-0 flex-1 flex flex-col overflow-y-auto">
@@ -315,7 +316,7 @@ function Admn() {
             <div className="border-b border-gray-200 px-4 py-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
               <div className="flex-1 min-w-0">
                 <h1 className="text-lg font-medium leading-6 text-gray-900 sm:truncate">
-                <text><Link to="/profile">Home</Link></text>
+                <text><Link to="/profile">Home</Link></text><text className="ml-16"><Link to="/billing">Billing</Link></text>
                 </h1>
               </div>
               <div className="mt-4 flex sm:mt-0 sm:ml-4">
@@ -518,4 +519,4 @@ function Admn() {
     )
 }
 
-export default Admn;
+export default AcctBilling;

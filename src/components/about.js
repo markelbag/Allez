@@ -4,7 +4,7 @@ import "./color.css"
 function About() {
 
     return (
-        <section className="w-3/4 justify-center m-auto py-12 px-4 text-center">
+        <section className="lg:w-3/4 justify-center m-auto py-12 px-4 text-center">
   <h2 className="text-4xl mb-2 leading-tight font-heading font-semibold tracking-wider uppercase text">Allez Team</h2>
   <p className="max-w-xl mx-auto mb-12 text-gray-600">Helping people master themselves through the art of mastering fencing.</p>
   <div className="flex flex-wrap -mx-8">

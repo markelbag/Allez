@@ -11,7 +11,7 @@ function Layout({ children }) {
       {/* <Header /> */}
       <Nav />
 
-      <main className="flex-1 w-full max-w-8xl px-4 py-8 mx-auto md:px-8 md:py-16">
+      <main className="flex-1 lg:w-3/4 max-w-8xl px-4 py-8 mx-auto md:px-8 md:py-16">
         {children}
       </main>
 
