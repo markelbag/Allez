@@ -6,7 +6,7 @@ import "./color.css"
 function Membership() {
     return(
       <div>
-        <div className="bg h-64">
+        <div className="bg  xs:h-full">
         <div className="pt-12 sm:pt-16 lg:pt-6">
           <div className="max-w-screen-xl mx-auto text-center px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto space-y-2 lg:max-w-none">
@@ -24,19 +24,19 @@ function Membership() {
         </div>
         <div className="mt-16 bg-white pb-12 lg:mt-20 lg:pb-20">
     <div className="relative z-0">
-      <div className="absolute inset-0 h-5/6 bg lg:h-2/3"></div>
+      <div className="absolute inset-0 h-5/6 bg lg:h-2/3 xs:h-full"></div>
       <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative lg:grid lg:grid-cols-7">
-          <div className="mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
+          <div className="mx-auto rounded-lg border-gray-700 border-2 max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3">
             <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-l-lg">
               <div className="flex-1 flex flex-col">
-                <div className="bg-white px-6 py-10">
+                <div className="bg-white  px-6 py-10">
                   <div>
                     <h3 className="text-center text-2xl leading-8 font-medium text-gray-900" id="tier-hobby">
                       Member
                     </h3>
                     <div className="mt-4 flex items-center justify-center">
-                      <span className="px-3 flex items-start text-6xl leading-none tracking-tight text-gray-900">
+                      <span className="px-3  flex items-start text-6xl leading-none tracking-tight text-gray-900">
                         <span className="mt-2 mr-2 text-4xl font-medium">
                           $
                         </span>
@@ -187,7 +187,7 @@ function Membership() {
               </div>
             </div>
           </div>
-          <div className="mt-10 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
+          <div className="mt-10 rounded-lg border-gray-700 border-2 mx-auto max-w-md lg:m-0 lg:max-w-none lg:col-start-6 lg:col-end-8 lg:row-start-2 lg:row-end-3">
             <div className="h-full flex flex-col rounded-lg shadow-lg overflow-hidden lg:rounded-none lg:rounded-r-lg">
               <div className="flex-1 flex flex-col">
                 <div className="bg-white px-6 py-10">

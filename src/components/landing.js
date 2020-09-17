@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby";
 import "./color.css"
+import result1 from "../img/result1.jpg"
 import image from "../img/image.jpg"
 // import Coaches from "../img/IMG_7375.jpg"
 
@@ -10,7 +11,7 @@ function Landing() {
     
     return (
 <div className="relative bg-white overflow-hidden">
-<div className="max-w-screen-xl h-screen mx-auto">
+<div className="max-w-screen-xl h-screen mx-auto xs:h-32">
   <div className="relative z-10 pb-8 pt-20 bg-white sm:pb-16 md:pb-20 lg:max-w-3xl lg:w-full lg:pb-28 xl:pb-32">
     <svg className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
       <polygon points="50,0 100,0 50,100 0,100" />
@@ -72,13 +73,13 @@ function Landing() {
   <img className=" flex lg:pt-32 h-56 w-full object-cover sm:h-72 sm:pt-0 md:h-96 lg:w-full lg:h-auto" src="https://firebasestorage.googleapis.com/v0/b/allez-47904.appspot.com/o/IMG_7375.jpg?alt=media&token=7c7da9be-1584-4c3c-831e-6ee5ae63d34f" alt="coaches"></img>
 </div>
 <div>
-<section className=" px-4 marg lg:w-3/4 m-auto">
+<section className="pt-64 px-4 marg lg:w-3/4 m-auto">
   <h2 className="text-3xl text-center mb-8 font-heading">Latest posts</h2>
   <div className="flex flex-wrap -mx-4">
     <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
       <div className="h-full pb-8 rounded shadow-md">
         <a href="#">
-          <img className="mb-4" src={image} alt=""></img>
+          <img className="mb-4" src={result1} alt=""></img>
           <div className="px-6">
             <small>22 Oct 2019 | By Michael Scott</small>
             <h3 className="text-xl text my-3 font-heading">Local event results!</h3>

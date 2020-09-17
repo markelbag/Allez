@@ -1,8 +1,12 @@
-import React from "react"
+import React, { useState }  from "react"
+import { Transition } from '@tailwindui/react'
 import { Link } from "gatsby";
 import "../components/color.css"
 
 function Prof() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [isOpens, setIsOpens] = useState(false)
+  const [sidebarOpen, sidebarIsOpen] = useState(false)
     return(
         <div>
         <div className="h-screen flex overflow-hidden bg-white">
@@ -34,7 +38,7 @@ function Prof() {
             --> */}
             <div className="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-white">
               <div className="absolute top-0 right-0 -mr-14 p-1">
-                <button className="flex items-center justify-center h-12 w-12 rounded-full focus:outline-none focus:bg-gray-600" aria-label="Close sidebar">
+                <button onClick={() => sidebarIsOpen(!sidebarOpen)} className="flex items-center justify-center h-12 w-12 rounded-full focus:outline-none focus:bg-gray-600" aria-label="Close sidebar">
                   <svg className="h-6 w-6 text-white" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
                   </svg>
@@ -53,13 +57,31 @@ function Prof() {
                       Home
                     </a>
       
-                    <a href="#" className="group flex items-center px-2 py-2 text-base leading-5 font-medium rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition ease-in-out duration-150">
-                      <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-600 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-                      </svg>
-                      My tasks
-                    </a>
-      
+                    <a href="#" className="group flex items-center px-2 py-2 text-sm leading-5 font-medium rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition ease-in-out duration-150">
+                    <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-600 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    From your Coach
+                  </a>
+                  <a href="#" className="group flex items-center px-2 py-2 text-sm leading-5 font-medium rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition ease-in-out duration-150">
+                    <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-600 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    My tasks
+                  </a>
+                  <a href="#" className="group flex items-center px-2 py-2 text-sm leading-5 font-medium rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition ease-in-out duration-150">
+                    <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-600 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    Upcoming Competitions
+                  </a>
+                  <a href="#" className="group flex items-center px-2 py-2 text-sm leading-5 font-medium rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition ease-in-out duration-150">
+                    <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-600 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                    </svg>
+                    At home training
+                  </a>
+
                     <a href="#" className="group flex items-center px-2 py-2 text-base leading-5 font-medium rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none transition ease-in-out duration-150">
                       <svg className="mr-3 h-6 w-6 text-gray-400 group-hover:text-gray-500 group-focus:text-gray-600 transition ease-in-out duration-150" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -75,21 +97,21 @@ function Prof() {
                       <a href="#" className="group flex items-center px-3 py-2 text-base leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition ease-in-out duration-150">
                         <span className="w-2.5 h-2.5 mr-4 bg-indigo-500 rounded-full"></span>
                         <span className="truncate">
-                          Engineering
+                          Beginner
                         </span>
                       </a>
       
                       <a href="#" className="group flex items-center px-3 py-2 text-base leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition ease-in-out duration-150">
                         <span className="w-2.5 h-2.5 mr-4 bg-teal-400 rounded-full"></span>
                         <span className="truncate">
-                          Human Resources
+                          Member
                         </span>
                       </a>
       
                       <a href="#" className="group flex items-center px-3 py-2 text-base leading-5 font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition ease-in-out duration-150">
                         <span className="w-2.5 h-2.5 mr-4 bg-orange-500 rounded-full"></span>
                         <span className="truncate">
-                          Customer Success
+                          Competitive
                         </span>
                       </a>
                     </div>
@@ -114,7 +136,7 @@ function Prof() {
               <div className="px-3 mt-6 relative inline-block text-left">
                 {/* <!-- Dropdown menu toggle, controlling the show/hide state of dropdown menu. --> */}
                 <div>
-                  <button type="button" className="group w-full rounded-md px-3.5 py-2 text-sm leading-5 font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-500 focus:outline-none focus:bg-gray-200 focus:border-blue-300 active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150" id="options-menu" aria-haspopup="true" aria-expanded="true">
+                  <button type="button" onClick={() => setIsOpen(!isOpen)} className="group w-full rounded-md px-3.5 py-2 text-sm leading-5 font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-500 focus:outline-none focus:bg-gray-200 focus:border-blue-300 active:bg-gray-50 active:text-gray-800 transition ease-in-out duration-150" id="options-menu" aria-haspopup="true" aria-expanded="true">
                     <div className="flex w-full justify-between items-center">
                       <div className="flex items-center justify-between space-x-3">
                         <img className="w-10 h-10 bg-gray-300 rounded-full flex-shrink-0" src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3&w=256&h=256&q=80" alt="">
@@ -130,19 +152,21 @@ function Prof() {
                     </div>
                   </button>
                 </div>
-                {/* <!--
-                  Dropdown panel, show/hide based on dropdown state.
-      
-                  Entering: "transition ease-out duration-100"
-                    From: "transform opacity-0 scale-95"
-                    To: "transform opacity-100 scale-100"
-                  Leaving: "transition ease-in duration-75"
-                    From: "transform opacity-100 scale-100"
-                    To: "transform opacity-0 scale-95"
-                --> */}
-                <div className="z-10 mx-3 origin-top absolute right-0 left-0 mt-1 rounded-md shadow-lg">
-                  <div className="rounded-md bg-white shadow-xs hidden" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                    <div className="py-1">
+                <Transition
+                show={isOpen}
+                  enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                  Leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                >
+
+             
+               {(ref) => (
+               <div ref={ref} className="z-10 mx-3 origin-top absolute right-0 left-0 mt-1 rounded-md shadow-lg">
+                  <div ref={ref} className="rounded-md bg-white shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                    <div ref={ref} className="py-1">
                       <a href="#" className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" role="menuitem">View profile</a>
                       <a href="#" className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" role="menuitem">Settings</a>
                       <a href="#" className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" role="menuitem">Notifications</a>
@@ -157,7 +181,9 @@ function Prof() {
                       <a href="#" className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" role="menuitem">Logout</a>
                     </div>
                   </div>
-                </div>
+              </div>
+              )}
+              </ Transition>
               </div>
               {/* <!-- Sidebar Search --> */}
               <div className="px-3 mt-5">
@@ -249,13 +275,16 @@ function Prof() {
         <div className="flex flex-col w-0 flex-1 overflow-hidden">
           {/* <!-- Search header --> */}
           <div className="relative z-10 flex-shrink-0 flex h-16 bg-white border-b border-gray-200 lg:hidden">
-            {/* <!-- Sidebar toggle, controls the 'sidebarOpen' sidebar state. --> */}
-            <button className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-600 lg:hidden" aria-label="Open sidebar">
+           <Transition
+            show={sidebarOpen}
+            >
+            <button onClick={() => sidebarIsOpen(!sidebarOpen)} className="px-4 border-r border-orange-900 text-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-600 lg:hidden" aria-label="Open sidebar">
               <svg className="h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </button>
-            <div className="flex-1 flex justify-between px-4 sm:px-6 lg:px-8">
+              {(ref) =>
+            <div ref={ref} className="flex-1 flex justify-between px-4 sm:px-6 lg:px-8">
               <div className="flex-1 flex">
                 <form className="w-full flex md:ml-0" action="#" method="GET">
                   <label htmlFor="search_field" className="sr-only">Search</label>
@@ -270,7 +299,7 @@ function Prof() {
                   </div>
                 </form>
               </div>
-              <div className="flex items-center">
+    <div className="flex items-center">
                 {/* <!-- Profile dropdown --> */}
                 <div className="ml-3 relative">
                   <div>
@@ -281,14 +310,14 @@ function Prof() {
                   </div>
                   {/* <!--
                     Profile dropdown panel, show/hide based on dropdown state.
-      
+                    
                     Entering: "transition ease-out duration-100"
                       From: "transform opacity-0 scale-95"
                       To: "transform opacity-100 scale-100"
-                    Leaving: "transition ease-in duration-75"
+                      Leaving: "transition ease-in duration-75"
                       From: "transform opacity-100 scale-100"
                       To: "transform opacity-0 scale-95"
-                  --> */}
+                    --> */}
                   <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
                     <div className="rounded-md bg-white shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
                       <div className="py-1">
@@ -309,8 +338,10 @@ function Prof() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+              </div>
+}
+                    </Transition>
+              </div>
           <main className="flex-1 relative z-0 overflow-y-auto focus:outline-none" tabIndex="0">
             {/* <!-- Page title & actions --> */}
             <div className="border-b border-gray-200 px-4 py-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
@@ -335,7 +366,7 @@ function Prof() {
             {/* <!-- Pinned projects --> */}
             <div className="px-4 mt-6 sm:px-6 lg:px-8">
               <h2 className="text-gray-500 text-xs font-medium uppercase tracking-wide">Pinned Tasks</h2>
-              <ul className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 xl:grid-cols-4 mt-3">
+              <ul className="grid grid-cols-1 gap-4 sm:gap-6 sm:grid-cols-2 xl:grid-cols-2 mt-3">
                 <li className="relative col-span-1 flex shadow-sm rounded-md">
                   <div className="flex-shrink-0 flex items-center justify-center w-16 bg-gray-700 text-white text-sm leading-5 font-medium rounded-l-md">
                     IF
@@ -348,23 +379,33 @@ function Prof() {
                       <p className="text-gray-500">12 videos</p>
                     </div>
                     <div className="flex-shrink-0 pr-2">
-                      <button id="pinned-project-options-menu-0" aria-has-popup="true" className="w-8 h-8 inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:text-gray-500 focus:bg-gray-100 transition ease-in-out duration-150">
+
+
+
+
+
+
+
+
+
+
+                      <button onClick={() => setIsOpens(!isOpens)} id="pinned-project-options-menu-0" aria-has-popup="true" className="w-8 h-8 inline-flex items-center justify-center text-gray-400 rounded-full bg-transparent hover:text-gray-500 focus:outline-none focus:text-gray-500 focus:bg-gray-100 transition ease-in-out duration-150">
                         <svg className="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
                           <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
                         </svg>
                       </button>
-                      {/* <!--
-                        Dropdown panel, show/hide based on dropdown state.
-      
-                        Entering: "transition ease-out duration-100"
-                          From: "transform opacity-0 scale-95"
-                          To: "transform opacity-100 scale-100"
-                        Leaving: "transition ease-in duration-75"
-                          From: "transform opacity-100 scale-100"
-                          To: "transform opacity-0 scale-95"
-                      --> */}
+                      <Transition
+                show={isOpens}
+                  enter="transition ease-out duration-100"
+                    enterFrom="transform opacity-0 scale-95"
+                    enterTo="transform opacity-100 scale-100"
+                  Leave="transition ease-in duration-75"
+                    leaveFrom="transform opacity-100 scale-100"
+                    leaveTo="transform opacity-0 scale-95"
+                >
+
                       <div className="z-10 mx-3 origin-top-right absolute right-10 top-3 w-48 mt-1 rounded-md shadow-lg">
-                        <div className="rounded-md bg-white shadow-xs hidden" role="menu" aria-orientation="vertical" aria-labelledby="pinned-project-options-menu-0">
+                        <div className="z-50  rounded-md bg-white shadow-xs " role="menu" aria-orientation="vertical" aria-labelledby="pinned-project-options-menu-0">
                           <div className="py-1">
                             <a href="#" className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900" role="menuitem">View</a>
                           </div>
@@ -375,6 +416,7 @@ function Prof() {
                           </div>
                         </div>
                       </div>
+                      </Transition>
                     </div>
                   </div>
                 </li>

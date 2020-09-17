@@ -12,3 +12,7 @@ b:hover {
 .marg {
     margin-top: -100px;
 }
+
+.click {
+    display: block;
+}

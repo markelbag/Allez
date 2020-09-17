@@ -17,7 +17,7 @@ function About() {
     <div className="md:w-1/2 p-8 md:border-l border-orange-300">
       <h3 className="text-xl font-heading text">Philosophy</h3>
       <span className="text-orange-400">Performance with adrenaline requires mental discipline</span>
-      <p className="mt-4 text-gray-600 leading-relaxed">As coaches we believe fencing should teach self control, good-sportsmanship, discipline and team work in a fun and engaging environment. In addition to the technical and tactical aspects of the sport, we look to develop our fencers physiologically and psychologically through a strong understanding of anatomy and sports psychology. We strive to help our students reach their highest potential whether they are looking for a new fitness program, recreational activity or to be competitive. <br/> <br/> Talk about how we pay attention to individuals and their natural draw versus just shoving them in a box and theory crafting to build complete fencers </p>
+      <p className="mt-4 text-gray-600 leading-relaxed">As coaches we believe fencing should teach self control, good-sportsmanship, discipline and team work in a fun and engaging environment. In addition to the technical and tactical aspects of the sport, we look to develop our fencers physiologically and psychologically through a strong understanding of anatomy and sports psychology. We strive to help our students reach their highest potential whether they are looking for a new fitness program, recreational activity or to be competitive. <br/> <br/>  </p>
     </div>
     {/* <div className="md:w-1/3 p-8 md:border-l border-orange-300">
       <img className="w-1/3 mx-auto mb-4 bg-red-500  rounded-full" src={Image} alt=""></img>

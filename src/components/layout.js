@@ -6,6 +6,7 @@ import "./color.css"
 import Nav from "./nav"
 
 function Layout({ children }) {
+  
   return (
     <div className="flex flex-col min-h-screen font-sans text-gray-900">
       {/* <Header /> */}
@@ -15,7 +16,7 @@ function Layout({ children }) {
         {children}
       </main>
 
-      <footer className="bg-white-700 fixed bottom-0 w-full bg-white">
+      <footer className="bg-white-700 h-16 fixed bottom-0 w-full bg-white">
         <nav className="flex justify-between max-w-4xl p-4 mx-auto text-sm md:p-8">
           <p className="text-gray-700">
             Created by{` `}
