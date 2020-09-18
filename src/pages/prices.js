@@ -9,7 +9,7 @@ function Prices() {
     <Layout>
       <SEO
         keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Contact"
+        title="Join!"
       />
     <Membership/>    
     </Layout>

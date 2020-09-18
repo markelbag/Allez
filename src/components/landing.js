@@ -2,7 +2,8 @@ import React from "react"
 import { Link } from "gatsby";
 import "./color.css"
 import result1 from "../img/result1.jpg"
-import image from "../img/image.jpg"
+import result2 from "../img/result2.jpg"
+import homeday from "../img/homeday.jpg"
 // import Coaches from "../img/IMG_7375.jpg"
 
 
@@ -70,7 +71,7 @@ function Landing() {
   </div>
 </div>
 <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-  <img className=" flex lg:pt-32 h-56 w-full object-cover sm:h-72 sm:pt-0 md:h-96 lg:w-full lg:h-auto" src="https://firebasestorage.googleapis.com/v0/b/allez-47904.appspot.com/o/IMG_7375.jpg?alt=media&token=7c7da9be-1584-4c3c-831e-6ee5ae63d34f" alt="coaches"></img>
+  <img className="block lg:mt-48 h-4xl w-full object-cover sm:h-72 sm:pt-0 md:h-96 lg:w-4xl" src="https://firebasestorage.googleapis.com/v0/b/allez-47904.appspot.com/o/IMG_7375.jpg?alt=media&token=7c7da9be-1584-4c3c-831e-6ee5ae63d34f" alt="coaches"></img>
 </div>
 <div>
 <section className="pt-64 px-4 marg lg:w-3/4 m-auto">
@@ -79,7 +80,7 @@ function Landing() {
     <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
       <div className="h-full pb-8 rounded shadow-md">
         <a href="#">
-          <img className="mb-4" src={result1} alt=""></img>
+          <img className="mb-4" src={result2} alt=""></img>
           <div className="px-6">
             <small>22 Oct 2019 | By Michael Scott</small>
             <h3 className="text-xl text my-3 font-heading">Local event results!</h3>
@@ -91,7 +92,7 @@ function Landing() {
     <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
       <div className="h-full pb-8 rounded shadow-md">
         <a href="#">
-          <img className="mb-4" src={image}  alt=""></img>
+          <img className="mb-4" src={result1}  alt=""></img>
           <div className="px-6">
             <small>22 Oct 2019 | By Dwight K. Schrute</small>
             <h3 className="text-xl text my-3 font-heading">National event results!</h3>
@@ -103,7 +104,7 @@ function Landing() {
     <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
       <div className="h-full pb-8 rounded shadow-md">
         <a href="#">
-          <img className="mb-4" src={image} alt=""></img>
+          <img className="mb-4" src={homeday} alt=""></img>
           <div className="px-6">
             <small>22 Oct 2019 | By Jim Halpert</small>
             <h3 className="text-xl text my-3 font-heading">Announcements</h3>
