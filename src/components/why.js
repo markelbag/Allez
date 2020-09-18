@@ -1,7 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby";
 import "../components/color.css"
-import Arigrant from "../img/Arigrant.jpg"
 
 
 function Why() {
@@ -26,7 +25,7 @@ function Why() {
         <div className="relative text-base mx-auto max-w-prose lg:max-w-none">
           <figure>
             <div className="relative pb-7/12 lg:pb-0">
-              <img src={Arigrant}></img>
+              <img src="https://firebasestorage.googleapis.com/v0/b/allez-47904.appspot.com/o/Arigrant.jpg?alt=media&token=4f3cb25b-4b5c-4718-8162-d889789c3ebd"></img>
             </div>
             <figcaption className="flex mt-3 text-sm text-gray-500">
               {/* <!-- Heroicon name: camera --> */}

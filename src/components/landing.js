@@ -1,9 +1,6 @@
 import React from "react"
 import { Link } from "gatsby";
 import "./color.css"
-import result1 from "../img/result1.jpg"
-import result2 from "../img/result2.jpg"
-import homeday from "../img/homeday.jpg"
 // import Coaches from "../img/IMG_7375.jpg"
 
 
@@ -80,7 +77,7 @@ function Landing() {
     <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
       <div className="h-full pb-8 rounded shadow-md">
         <a href="#">
-          <img className="mb-4" src={result2} alt=""></img>
+          <img className="mb-4" src="https://firebasestorage.googleapis.com/v0/b/allez-47904.appspot.com/o/result2.jpg?alt=media&token=703b5930-4f7c-4887-9383-9fbe88c651e7" alt=""></img>
           <div className="px-6">
             <small>22 Oct 2019 | By Michael Scott</small>
             <h3 className="text-xl text my-3 font-heading">Local event results!</h3>
@@ -92,7 +89,7 @@ function Landing() {
     <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
       <div className="h-full pb-8 rounded shadow-md">
         <a href="#">
-          <img className="mb-4" src={result1}  alt=""></img>
+          <img className="mb-4" src="https://firebasestorage.googleapis.com/v0/b/allez-47904.appspot.com/o/result1.jpg?alt=media&token=7efd3d79-b061-436d-93fd-ef6150c6fb74"  alt=""></img>
           <div className="px-6">
             <small>22 Oct 2019 | By Dwight K. Schrute</small>
             <h3 className="text-xl text my-3 font-heading">National event results!</h3>
@@ -104,7 +101,7 @@ function Landing() {
     <div className="w-full lg:w-1/3 px-4 mb-8 lg:mb-0">
       <div className="h-full pb-8 rounded shadow-md">
         <a href="#">
-          <img className="mb-4" src={homeday} alt=""></img>
+          <img className="mb-4" src="https://firebasestorage.googleapis.com/v0/b/allez-47904.appspot.com/o/homeday.jpg?alt=media&token=161e770e-9821-403e-b2e2-7de649dbe250" alt=""></img>
           <div className="px-6">
             <small>22 Oct 2019 | By Jim Halpert</small>
             <h3 className="text-xl text my-3 font-heading">Announcements</h3>
