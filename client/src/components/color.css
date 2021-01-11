@@ -1,0 +1,18 @@
+.bg {
+    background-color: #ed7117;
+
+}
+b:hover {
+    background-color: #ed7117;
+}
+.text {
+    color: #ed7117;
+}
+
+.marg {
+    margin-top: -100px;
+}
+
+.click {
+    display: block;
+}
